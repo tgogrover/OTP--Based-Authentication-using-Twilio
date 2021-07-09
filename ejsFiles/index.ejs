@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@1.7.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/css/OTP.css" rel="stylesheet">
+</head>
+<body class="h-screen overflow-hidden flex items-center justify-center"  style="background: #237ad1; background-image: url(/image/OTP.jpg);">
+    <div class="bg-gray-200 rounded py-16 px-12 m-16 flex flex-col items-center justify-center">
+  <!-- User profile image -->
+  <img class="rounded-full h-32 w-32" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" alt="user avatar" />
+  <form  class="mt-8 mb-4" id="login-form">
+
+    <div class="mb-4">
+      <label for="mobileNoInput" class="sr-only">Mobile Number</label>
+      <input class="border-solid border border-gray-400 rounded px-2 py-3" id="mobileNoInput" type="text" id="userEmail" placeholder="+91 1234567890"  />
+    </div>
+    <div class="hidden">
+      <label for="OTPInput"  class="sr-only">OTP</label>
+      <input class="border-solid border border-gray-400 rounded px-2 py-3" id="OTPInput" placeholder="Password" >
+    </div>
+    <button class="bg-gray-500 hover:bg-gray-600 text-white font-bold w-full py-3" style="color: purple;" type="submit">Get OTP</button>
+  </form>
+  
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/frontEnd.js"></script>
+</body>
+</html>
